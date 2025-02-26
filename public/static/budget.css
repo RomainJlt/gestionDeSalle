@@ -1,0 +1,240 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(217, 221, 225, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(54, 56, 57);
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color: rgb(54, 56, 57);
+}
+
+.deconexion{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s;
+}
+
+.deconexion a{
+    text-decoration: none;
+    color: white;
+}
+
+.deconexion:hover{
+    background-color: #0056b3;
+}
+
+.bgMove {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    transition: transform 7.0s ease-out;
+    z-index: -1;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.budgetNumber{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    max-width: 700px;
+    margin: 1rem 0 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.amountContainer{
+    margin-top: -1rem;
+    display: flex;
+}
+
+.amountContainer p{
+    margin: 10px 2px;
+}
+
+.nbEarned{
+    color: greenyellow;
+}
+
+.nbAvailable{
+    color: rebeccapurple;
+}
+
+.nbpent{
+    color: red;
+}
+
+.inputContainer{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 70%;
+}
+
+.inputContainer input,
+.inputContainer select{
+    border: none;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.inputContainer .description{
+    width: 300px;
+}
+
+.inputContainer .amount{
+    width: 100px;
+}
+
+.btnContainer{
+    margin:10px 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnContainer .addIncome,
+.btnContainer .addExpense{
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btnContainer .addIncome{
+    background-color: rgb(0, 128, 0);
+    transition: all 0.5s;
+}
+
+.btnContainer .addIncome:hover{
+    background-color: rgb(0, 64, 0);
+}
+
+.btnContainer .addExpense{
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s;
+}
+
+.btnContainer .addExpense:hover{
+    background-color: rgb(122, 0, 0);
+}
+
+.items__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+@media screen and (max-width: 1000px) {
+    .items__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.containerCount{
+    margin: 20px;
+}
+
+.income,
+.expense{
+    background-color: white;
+    border-radius:15px ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.income section,
+.expense section{
+    display: flex;
+    flex-direction: row;
+}
+
+.income p,
+.expense p{
+    max-width: 200px;
+    margin: auto 10px;
+}
+
+.income section p,
+.expense section p{
+    margin: 0px 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spanSupr{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.spanSupr:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border-radius: 100px;
+
+}
