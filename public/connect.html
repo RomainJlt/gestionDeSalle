@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion / Inscription</title>
     <link rel="stylesheet" href="static/connect.css">
+    <link rel="stylesheet" href="ui/styles.css">
 </head>
 <body>
     <section class="bg">
@@ -14,11 +15,15 @@
         <section id="loginContainer" class="form-container">
             <h1>Connexion</h1>
             <form id="loginForm">
-                <label for="loginMail">MAIL :</label>
-                <input type="text" id="loginMail" required>
-                <label for="loginPassword">MOT DE PASSE :</label>
-                <input type="password" id="loginPassword" required>
-                <button type="submit">Se connecter</button>
+                <div class="form-group">
+                    <label for="loginMail">Email :</label>
+                    <input type="email" id="loginMail" required placeholder="Entrez votre email">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Mot de passe :</label>
+                    <input type="password" id="loginPassword" required placeholder="Entrez votre mot de passe">
+                </div>
+                <button type="submit" class="btn-submit">Se connecter</button>
             </form>
             <p>Vous n'avez pas de compte ? <a href="#" id="showRegister">Inscrivez-vous</a></p>
         </section>
@@ -27,22 +32,27 @@
         <section id="registerContainer" class="form-container hidden">
             <h1>Inscription</h1>
             <form id="registerForm">
-                <label for="registerFirstName">NOM UTILISATEUR :</label>
-                <input type="text" id="registerFirstName" required>
-                <label for="registerLastName">NOM DE FAMILLE :</label>
-                <input type="text" id="registerLastName" required>
-                <label for="registerEmail">MAIL :</label>
-                <input type="email" id="registerEmail" required>
-                <label for="registerPassword">MOT DE PASSE :</label>
-                <input type="password" id="registerPassword" required>
-                <button type="submit">S'inscrire</button>
+                <div class="form-group">
+                    <label for="registerFirstName">Prénom :</label>
+                    <input type="text" id="registerFirstName" required placeholder="Entrez votre prénom">
+                </div>
+                <div class="form-group">
+                    <label for="registerLastName">Nom :</label>
+                    <input type="text" id="registerLastName" required placeholder="Entrez votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email :</label>
+                    <input type="email" id="registerEmail" required placeholder="Entrez votre email">
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Mot de passe :</label>
+                    <input type="password" id="registerPassword" required placeholder="Minimum 8 caractères">
+                </div>
+                <button type="submit" class="btn-submit">S'inscrire</button>
             </form>
-            <!-- Lien pour rediriger vers le formulaire de connexion -->
             <p>Déjà un compte ? <a href="#" id="showLogin">Connectez-vous</a></p>
         </section>
     </section>
     <script src="ui/script.js"></script>
-    <script src="deco/cursor.js"></script>
-    <script src="deco/bg.js"></script>
 </body>
 </html>

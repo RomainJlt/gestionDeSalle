@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Liste des Salles</title>
 </head>
 <body>
-    <h1>
-        Bienvenue sur notre site
-    </h1>
+    <header>
+        <h1>Liste des Salles</h1>
+        <a href="./connect.html">Deconexion</a>
+        <a href="./recherche.html">Recherche</a>
+    </header>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Numéro de Salle</th>
+                <th>Étage</th>
+                <th>Capacité</th>
+                <th>Équipements</th>
+                <th>Disponibilité</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="sallesTable">
+        </tbody>
+    </table>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="ui/salle.js"></script>
 </body>
 </html>
